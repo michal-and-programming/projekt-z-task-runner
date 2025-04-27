@@ -160,6 +160,7 @@ header a {
     margin: 0 0 20px;
   }
 }
+
 footer {
   p {
     margin: 20px 0;
@@ -193,4 +194,55 @@ footer .container {
 
 footer .col-lg-4 {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-image-text h1 {
+    font-size: 40px;
+  }
+  .portfolio-text,
+  .portfolio-box-image {
+    width: auto;
+  }
+  .relative img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+  .row {
+    padding: 0;
+  }
+  .header-image-text h1 {
+    font-size: 40px;
+  }
+  header ul {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+  }
+  .absolute {
+    justify-content: space-between;
+  }
+  .header-image-text h1,
+  p {
+    font-size: 20px;
+  }
+  .services-box h2 {
+    text-align: center;
+  }
+  .services-box p {
+    margin: 5px 5px 50px;
+  }
+  .portfolio-text,
+  .portfolio-box-image {
+    width: auto;
+  }
+  footer p {
+    padding: 0;
+    text-align: center;
+  }
 }
